@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Image Gallery</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="container-fluid text-center py-4">
+        <h1>JavaScript Image Gallery</h1>
+
+        <p>
+            Hover over an image below to display it in the preview area.
+        </p>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Preview Image -->
+        <div
+            id="image"
+            class="preview"
+        >
+            Hover over an image below to display here.
+        </div>
+
+
+        <!-- Images -->
+        <div class="row g-4 mt-4">
+
+            <!-- Image 1 -->
+            <div class="col-md-4">
+
+                <img
+                    src="images/paris.jpg"
+                    alt="Beautiful view of Paris"
+                    class="img-fluid gallery-image"
+                    tabindex="0"
+                    onmouseover="upDate(this)"
+                    onmouseout="undo()"
+                    onfocus="upDate(this)"
+                    onblur="undo()"
+                >
+
+            </div>
+
+
+            <!-- Image 2 -->
+            <div class="col-md-4">
+
+                <img
+                    src="images/london.jpg"
+                    alt="Beautiful view of London"
+                    class="img-fluid gallery-image"
+                    tabindex="0"
+                    onmouseover="upDate(this)"
+                    onmouseout="undo()"
+                    onfocus="upDate(this)"
+                    onblur="undo()"
+                >
+
+            </div>
+
+
+            <!-- Image 3 -->
+            <div class="col-md-4">
+
+                <img
+                    src="images/tokyo.jpg"
+                    alt="Beautiful view of Tokyo"
+                    class="img-fluid gallery-image"
+                    tabindex="0"
+                    onmouseover="upDate(this)"
+                    onmouseout="undo()"
+                    onfocus="upDate(this)"
+                    onblur="undo()"
+                >
+
+            </div>
+
+
+            <!-- Image 4 -->
+            <div class="col-md-4">
+
+                <img
+                    src="images/city view.jpg"
+                    alt="Beautiful mountain landscape"
+                    class="img-fluid gallery-image"
+                    tabindex="0"
+                    onmouseover="upDate(this)"
+                    onmouseout="undo()"
+                    onfocus="upDate(this)"
+                    onblur="undo()"
+                >
+
+            </div>
+
+
+            <!-- Image 5 -->
+            <div class="col-md-4">
+
+                <img
+                    src="images/lake city.jpg"
+                    alt="Beautiful beach"
+                    class="img-fluid gallery-image"
+                    tabindex="0"
+                    onmouseover="upDate(this)"
+                    onmouseout="undo()"
+                    onfocus="upDate(this)"
+                    onblur="undo()"
+                >
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="text-center mt-5 py-3">
+
+        <p>
+            JavaScript Image Gallery
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
